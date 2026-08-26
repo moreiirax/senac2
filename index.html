@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Icone do site  -->
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+
+    <!-- importação do boxicons  -->
+    <!-- Basic Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/basic/boxicons.min.css" rel="stylesheet">
+    <!-- Filled Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/filled/boxicons-filled.min.css" rel="stylesheet">
+    <!-- Brand Icons -->
+    <link href="https://cdn.boxicons.com/3.0.8/fonts/brands/boxicons-brands.min.css" rel="stylesheet">
+    <!-- link da cdn do aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+    <!-- Meu style  -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- link do meu style responsivo -->
+    <link rel="stylesheet" href="./assets/css/media.css">
+
+    <!-- Nome da guia -->
+    <title>Senac TI36</title>
+</head>
+
+<body>
+
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <!-- header.container>img+nav>a*4^a>button{Meu Senac} -->
+    <header class="container">
+        <img src="./assets/img/logo_senac_default.png" alt="">
+        <nav>
+            <!-- quando precisa linkar a um ID utilizamos a #  -->
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#blog">blog</a>
+            <a href="#explore">Explore</a>
+            <a href="contato.html" target="_blank">Contato</a>
+        </nav>
+        <a href="#"><button>Meu Senac <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                    viewBox="0 0 24 24">
+                    <!--Boxicons v3.0.8 https://boxicons.com | License  https://docs.boxicons.com/free-->
+                    <path
+                        d="M16 6.09V4.5A2.5 2.5 0 0 0 13.5 2h-3A2.5 2.5 0 0 0 8 4.5v1.59C5.17 6.57 3 9.03 3 12v8c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2v-8c0-2.97-2.17-5.43-5-5.91M10 4.5c0-.28.22-.5.5-.5h3c.28 0 .5.22.5.5V6h-4zM9 20v-2h6v2zm6-4H9v-2h6zm2 4v-6c0-1.1-.9-2-2-2H9c-1.1 0-2 .9-2 2v6H5v-8c0-2.21 1.79-4 4-4h6c2.21 0 4 1.79 4 4v8z">
+                    </path>
+                </svg></button></a>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- section#home>.container>input:search -->
+        <section id="home">
+            <div class="container">
+                <input type="search" placeholder=" O que você Procura?">
+            </div>
+        </section>
+
+
+        <!-- section#sobre>h2.titulo{Sobre Nós} -->
+        <section id="sobre">
+            <h2 class="titulo" data-aos="fade-up" data-aos-duration="3000">Sobre Nós</h2>
+
+            <!-- .container>.textoSobre>h3{Senac São Miguel Paulista}+p+a>button{Ver Mais} -->
+            <div class="container">
+
+                <div class="textoSobre">
+                    <h3>Senac São Miguel Paulista</h3>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi tempore provident adipisci,
+                        fugiat officia quaerat eaque ullam distinctio saepe? At inventore culpa ab perferendis obcaecati
+                        repudiandae ea debitis et consequuntur. Nam beatae ipsum laudantium facere autem et! Veniam
+                        ullam a sequi, quo quam numquam asperiores, deleniti libero dolorem voluptate repellendus.</p>
+                    <a href="#"><button>Ver Mais</button></a>
+                </div>
+
+                <figure>
+                    <img src="./assets/img/senacSaoMiguel.webp" alt="">
+                    <figcaption>Fachada são miguel</figcaption>
+                </figure>
+
+            </div>
+        </section>
+
+
+        <!-- section#blog>h2.titulo+.container>h3+p+a>button -->
+        <section id="blog">
+            <h2 class="titulo" data-aos="fade-up" data-aos-duration="3000">Histórias do Senac</h2>
+            <div class="container">
+                <h3> Senac na Minha História</h3>
+                <p>Conheça as histórias na nova seção do Blog.</p>
+                <a href="#"><button>Conhecer histórias </button></a>
+            </div>
+        </section>
+
+        <!-- section#explore>h2.titulo+.container>article.cardExplore*3>img+h3+p+a>button -->
+        <section id="explore">
+            <h2 class="titulo" data-aos="fade-up" data-aos-duration="3000">Explore Senac</h2>
+
+            <div class="container">
+
+                <article class="cardExplore forum">
+                    <img src="./assets/img/logo_senac_explore.png" alt="">
+                    <h3>Diálogos sobre o futuro da educação </h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto aliquid quisquam recusandae.
+                    </p>
+                    <a href="#"><button>Fazer Inscrição</button></a>
+                </article>
+
+                <article class="cardExplore pesquisa">
+                    <img src="./assets/img/logo_senac_explore.png" alt="">
+                    <h3>Panorama EPT</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores quia assumenda doloribus!</p>
+                    <a href="#"><button>Conferir pesquisa</button></a>
+                </article>
+
+                <article class="cardExplore campanha">
+                    <img src="./assets/img/logo_senac_explore.png" alt="">
+                    <h3>Quer fazer? <br> Senac</h3>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla sed voluptatem nemo!</p>
+                    <a href="#"><button> Conhecer campanha</button></a>
+                </article>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+        <img src="assets/img/logo_senac_white.png" alt="Logo Senac">
+
+        <h3>© Senac TI36 todos os direitos reservados 2026</h3>
+
+        <h3>tecnicoeminformatica@gmail.com</h3>
+
+    </footer>
+
+
+    <!-- link da cnd do aos -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- link do meu js  -->
+    <script src="./assets/js/script.js"></script>
+
+
+</body>
+
+</html>
